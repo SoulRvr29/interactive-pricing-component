@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(230, 100%, 99%);
+  background-image: url(images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  color: hsl(225, 20%, 60%);
+  display: flex;
+  justify-content: center;
+}
+.site_conteiner {
+  width: 540px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.7rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  color: hsl(227, 35%, 25%);
+}
+/***** Header *****/
+.header_conteiner {
+  background-image: url(images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding: 6rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+/***** Main *****/
+main {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 2px 20px 20px hsla(225, 20%, 60%, 0.15);
+}
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 3rem;
+  margin-top: 3rem;
+}
+.page_views {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.price_span {
+  font-size: 2.5rem;
+  color: hsl(227, 35%, 25%);
+  font-weight: 800;
+  margin-right: 7px;
+}
+.monthly_price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.slider_block {
+  position: relative;
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 10px;
+  background: hsl(174, 86%, 45%);
+  outline: none;
+  margin: 2.5rem 0;
+}
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #04aa6d;
+  background-color: hsl(174, 86%, 45%);
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px hsla(174, 86%, 45%, 0.4);
+}
+.slider::-webkit-slider-thumb:hover {
+  background-color: hsl(174, 77%, 53%);
+}
+.billing {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  margin: 3rem;
+  margin-top: 15px;
+  text-align: center;
+}
+.monthYear_trigger {
+  display: flex;
+  position: relative;
+  height: 22px;
+  width: 40px;
+  background-color: hsl(223, 50%, 87%);
+  border-radius: 15px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.trigger_dot {
+  z-index: 100;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  margin: 4px;
+  border-radius: 7px;
+  background-color: white;
+}
+.discount_percent {
+  visibility: hidden;
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.6rem;
+  margin-left: 10px;
+}
+
+.summary {
+  font-size: 0.8rem;
+  border-top: 1px solid hsla(225, 49%, 68%, 0.164);
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary li {
+  margin: 10px 0;
+  list-style-type: none;
+}
+.summary li::before {
+  content: url(images/icon-check.svg);
+  margin-right: 15px;
+}
+.start_button {
+  text-align: center;
+  text-decoration: none;
+  color: hsl(223, 50%, 87%);
+  background-color: hsl(227, 35%, 25%);
+  border-radius: 50px;
+  padding: 12px 45px;
+}
+.start_button:hover {
+  color: white;
+}
+/***** Footer *****/
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/***** Media Query *****/
+
+@media screen and (max-width: 510px) {
+  .header_conteiner {
+    padding: 50px 0;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  .header_conteiner p {
+    max-width: 13rem;
+    line-height: 1.8;
+  }
+  .pricing {
+    grid-template-columns: 1fr;
+    margin: 30px 24px;
+  }
+  .page_views,
+  .monthly_price {
+    justify-self: center;
+  }
+  .slider_block {
+    grid-column: auto;
+    grid-row: 2/3;
+  }
+  .discount {
+    display: none;
+  }
+  .billing {
+    margin: 30px 15px;
+  }
+  .summary ul {
+    text-align: center;
+  }
+  .summary {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
