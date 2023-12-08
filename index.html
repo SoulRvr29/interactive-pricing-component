@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="script.js"></script>
+
     <link
       rel="icon"
       type="image/png"
@@ -42,17 +42,17 @@
               oninput="sliderFunction(this.value)"
               class="slider"
               type="range"
-              min="1"
-              max="5"
-              value="3"
+              min="0"
+              max="4"
+              value="2"
             />
           </div>
         </div>
         <div class="billing">
           Monthly Billing
-          <div class="monthYear_trigger" onclick="trigger()">
+          <button class="monthYear_trigger" onclick="trigger()">
             <div class="trigger_dot"></div>
-          </div>
+          </button>
           Yearly Billing
           <span class="discount_percent"
             >25% <span class="discount"> discount</span></span
@@ -83,5 +83,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
