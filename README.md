@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://www.frontendmentor.io/solutions/interactive-pricing-component-RWGZHZatTk)
-- Live Site URL: [live site](https://soulrvr29.github.io/interactive-pricing-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-pricing-component-RWGZHZatTk](https://www.frontendmentor.io/solutions/interactive-pricing-component-RWGZHZatTk)
+- Live Site URL: [https://soulrvr29.github.io/interactive-pricing-component/](https://soulrvr29.github.io/interactive-pricing-component/)
 
 ### Built with
 
